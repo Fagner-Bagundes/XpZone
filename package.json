@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/Fagner-Bagundes/XpZone",
   "name": "xpzone",
   "private": true,
   "version": "0.0.0",
@@ -6,9 +7,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh -pages -d dist",
+    "sass": "sass --watch src/sass/main.sass:src/css/main.css"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass": "^1.86.3",
     "vite": "^6.2.0"
   }
 }

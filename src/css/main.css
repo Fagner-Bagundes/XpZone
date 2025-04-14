@@ -45,6 +45,36 @@ table {
 p {
   color: #D9D9D9;
   font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-area {
+  padding: 15px;
+}
+.search-area .search {
+  border-bottom: solid 1px #D9D9D9;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 10px;
+}
+.search-area .search input {
+  color: white;
+}
+.search-area .search img {
+  width: 30px;
+}
+.search-area .box-city {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  text-align: center;
+  color: #D9D9D9;
+  font-family: "Oxanium", sans-serif;
+}
+.search-area .box-city img {
+  width: 30px;
 }
 
 body {

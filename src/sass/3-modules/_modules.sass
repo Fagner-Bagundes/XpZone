@@ -1,3 +1,31 @@
 @use '../0-base/_base' as B
 @use '../2-variebles/_variables' as V
 
+.search-area
+    // background-color: black
+    padding: 15px
+
+    .search
+        border-bottom: solid 1px V.$text-color
+        text-align: center
+        display: flex
+        justify-content: space-between
+        padding-block: 10px
+
+        input
+            color: V.$white
+
+        img
+            width: 30px
+    .box-city       
+        text-align: center
+        display: flex
+        justify-content: space-between
+        padding-top: 20px
+        text-align: center
+        color: V.$text-color
+        font-family: V.$font-title
+
+        img
+            width: 30px
+

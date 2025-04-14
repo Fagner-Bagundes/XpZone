@@ -7,8 +7,6 @@ body
     background-color: V.$background
     color: V.$white
 
-h1
-    font-size: 2em
 // Dispositivo	Largura comum (em pixels)
 // Celulares pequenos	320px - 480px
 // Celulares médios (comuns)	480px - 768px
@@ -18,7 +16,7 @@ h1
 // Monitores ultrawide	1600px+
 
 header
-    padding-inline: 7%
+    padding-inline: 5%
     padding-block: 4%
     background-image: url("../assets/imgs/bg-mobile/bg1.png")
     background-position: center center
@@ -29,14 +27,32 @@ header
 nav
     display: flex
     justify-content: space-between
+    padding-inline: 2%
     
     .logo
         width: 25%
     .menu-borger
         width: 7%
+.content
+    padding-top: 285px 
+    text-align: center
 
-h1
-    background-image: V.$GB-vertical
-    background-clip: text
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
+    h1
+        background-image: V.$GB-vertical
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        font-family: V.$font-title
+        font-weight: 900
+        line-height: 110%
+        font-size: 2.4em
+        letter-spacing: -1px
+        strong
+            -webkit-text-fill-color: V.$white
+            color: V.$white
+
+    p
+        
+        padding-block: 40px
+
+

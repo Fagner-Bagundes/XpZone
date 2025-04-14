@@ -84,6 +84,13 @@ p {
   width: 30px;
 }
 
+.empresas {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
 body {
   background-color: #25064B;
   color: white;

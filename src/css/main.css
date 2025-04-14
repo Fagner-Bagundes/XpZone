@@ -48,6 +48,10 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  line-height: 110%;
+  font-size: 2.4em;
+  letter-spacing: -1px;
 }
 
 p {
@@ -104,6 +108,32 @@ p {
   color: white;
   font-family: "Oxanium", sans-serif;
   font-size: 1.5em;
+}
+
+.xp-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.xp-box img {
+  height: 130px;
+  width: 95%;
+}
+.xp-box .xp-txt {
+  font-size: 1.9em;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  background-image: linear-gradient(45deg, #E54A64 16.1%, #FE9652 61.88%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.xp-box .xp-txt strong {
+  -webkit-text-fill-color: white;
+  color: white;
+  font-weight: bold;
 }
 
 body {
@@ -175,8 +205,8 @@ main .hero1 {
   padding-block: 4%;
   background-image: url("../assets/imgs/bg-mobile/bg2.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom bottom;
+  background-size: 100% 85%;
+  background-position: center bottom;
 }
 main .hero1 .kratos {
   width: 80%;
@@ -194,6 +224,31 @@ main .hero1 .hero-content ul li {
   display: flex;
   gap: 20px;
   padding-block: 10px;
+}
+main .hero2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 7%;
+  padding-block: 4%;
+  gap: 20px;
+}
+main .hero2 .homen-aranha {
+  width: 100%;
+  margin-right: 8%;
+}
+main .hero2 .content-hero2 {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding-bottom: 110px;
+}
+main .hero2 .content-hero2 h1 {
+  font-family: "Oxanium", sans-serif;
+  background-image: linear-gradient(45deg, #E54A64 16.1%, #FE9652 61.88%);
 }
 
 /*# sourceMappingURL=main.css.map */

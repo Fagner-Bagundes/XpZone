@@ -89,10 +89,12 @@ p {
   gap: 30px;
   overflow-x: auto;
   white-space: nowrap;
+  padding: 20px;
+  scrollbar-width: none;
 }
 
 body {
-  background-color: #25064B;
+  background-color: #120428;
   color: white;
 }
 
@@ -104,6 +106,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 86.83%, #120428 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 17.1%, #120428 85.84%, #120428 91.82%), url("../assets/imgs/bg-mobile/bg1.png") lightgray -559.825px -5.123px/259.175% 101.593% no-repeat, #120428;
 }
 
 nav {

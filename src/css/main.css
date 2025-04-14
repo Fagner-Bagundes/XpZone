@@ -42,6 +42,14 @@ table {
   border-spacing: 0;
 }
 
+h1 {
+  font-size: 2.4em;
+  background-image: linear-gradient(45deg, #E54A64 16.1%, #FE9652 61.88%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 p {
   color: #D9D9D9;
   font-size: 1.1em;
@@ -82,15 +90,7 @@ p {
 }
 .search-area .box-city img {
   width: 30px;
-}
-
-.empresas {
-  display: flex;
-  gap: 30px;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 20px;
-  scrollbar-width: none;
+  rotate: -90deg;
 }
 
 body {
@@ -108,24 +108,22 @@ header {
   height: 100%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 86.83%, #120428 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 17.1%, #120428 85.84%, #120428 91.82%), url("../assets/imgs/bg-mobile/bg1.png") lightgray -559.825px -5.123px/259.175% 101.593% no-repeat, #120428;
 }
-
-nav {
+header nav {
   display: flex;
   justify-content: space-between;
   padding-inline: 2%;
 }
-nav .logo {
+header nav .logo {
   width: 25%;
 }
-nav .menu-borger {
+header nav .menu-borger {
   width: 7%;
 }
-
-.content {
-  padding-top: 285px;
+header .content {
+  padding-top: 67%;
   text-align: center;
 }
-.content h1 {
+header h1 {
   background-image: linear-gradient(45deg, #E54A64 16.1%, #FE9652 61.88%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -136,12 +134,46 @@ nav .menu-borger {
   font-size: 2.4em;
   letter-spacing: -1px;
 }
-.content h1 strong {
+header h1 strong {
   -webkit-text-fill-color: white;
   color: white;
 }
-.content p {
+header p {
   padding-block: 40px;
+}
+
+main {
+  margin-top: 10px;
+}
+main .empresas {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+  scrollbar-width: none;
+}
+main .hero1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .hero1 .kratos {
+  width: 80%;
+  margin-right: 10%;
+}
+main .hero1 .hero-content {
+  text-align: center;
+  margin-top: -110px;
+}
+main .hero1 .hero-content ul {
+  padding: 20px;
+}
+main .hero1 .hero-content ul li {
+  display: flex;
+  gap: 25px;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

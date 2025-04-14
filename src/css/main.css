@@ -49,7 +49,10 @@ p {
 }
 
 .search-area {
-  padding: 15px;
+  padding: 5px 15px 15px 15px;
+  border: 0.686px solid #D9D9D9;
+  background: rgba(153, 153, 153, 0.24);
+  backdrop-filter: blur(6.8592057228px);
 }
 .search-area .search {
   border-bottom: solid 1px #D9D9D9;
@@ -59,7 +62,10 @@ p {
   padding-block: 10px;
 }
 .search-area .search input {
-  color: white;
+  color: #D9D9D9;
+  font-size: 1.3em;
+  width: 80%;
+  height: 40px;
 }
 .search-area .search img {
   width: 30px;
@@ -70,8 +76,9 @@ p {
   justify-content: space-between;
   padding-top: 20px;
   text-align: center;
-  color: #D9D9D9;
+  color: white;
   font-family: "Oxanium", sans-serif;
+  font-size: 1.2em;
 }
 .search-area .box-city img {
   width: 30px;

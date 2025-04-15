@@ -346,5 +346,34 @@ main .hero4 .btn {
   padding: 10px;
   font-size: 1em;
 }
+main .hero5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 90px;
+  flex-direction: column;
+  text-align: center;
+  padding-inline: 7%;
+  padding-block: 4%;
+}
+main .hero5 img {
+  width: 85%;
+}
+main .hero5 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .hero5 h1 {
+  font-size: 2.2em;
+}
+main .hero5 p {
+  font-size: 20px;
+}
+main .hero5 .btn {
+  width: 200px;
+  font-size: 1.4em;
+  padding: 9px;
+}
 
 /*# sourceMappingURL=main.css.map */

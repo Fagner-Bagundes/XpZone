@@ -7,13 +7,7 @@ body
     background-color: V.$background
     color: V.$white
 
-// Dispositivo	Largura comum (em pixels)
-// Celulares pequenos	320px - 480px
-// Celulares médios (comuns)	480px - 768px
-// Tablets	768px - 1024px
-// Laptops	1024px - 1280px
-// Desktops grandes	1280px+
-// Monitores ultrawide	1600px+
+
 
 header
     padding-inline: 7%
@@ -255,3 +249,41 @@ main
             width: 200px
             font-size: 1.4em
             padding: 9px
+
+footer
+    margin-top: 100px
+    background-color: red
+    // display: flex
+    // flex-direction: column
+    // justify-content: center
+    background-color: V.$secondary-700
+    background: rgba(153, 153, 153, 0.04)
+    backdrop-filter: blur(2px)
+
+    padding-block: 15%
+    
+    h1
+        text-align: center
+        font-family: V.$font-title
+        margin-bottom: 50px
+    .contato-area
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 15px
+        border-bottom: solid 2px #593D85
+        padding-bottom: 20px
+        
+        .country-selection
+            display: flex
+            justify-content: center
+            margin: 20px
+            width: 250px
+            justify-content: space-between
+            align-items: center
+            padding: 10px
+        .redes-sociais
+            display: flex
+            gap: 20px
+        

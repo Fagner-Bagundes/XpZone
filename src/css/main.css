@@ -382,4 +382,40 @@ main .hero5 .btn {
   padding: 9px;
 }
 
+footer {
+  margin-top: 100px;
+  background-color: red;
+  background-color: #25064B;
+  background: rgba(153, 153, 153, 0.04);
+  backdrop-filter: blur(2px);
+  padding-block: 15%;
+}
+footer h1 {
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+  margin-bottom: 50px;
+}
+footer .contato-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-bottom: solid 2px #593D85;
+  padding-bottom: 20px;
+}
+footer .contato-area .country-selection {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  width: 250px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+footer .contato-area .redes-sociais {
+  display: flex;
+  gap: 20px;
+}
+
 /*# sourceMappingURL=main.css.map */

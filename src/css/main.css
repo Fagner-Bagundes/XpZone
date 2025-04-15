@@ -350,11 +350,16 @@ main .hero5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-block: 90px;
   flex-direction: column;
   text-align: center;
+  height: 1100px;
   padding-inline: 7%;
-  padding-block: 4%;
+  padding-top: 60px;
+  margin-top: -60px;
+  background-image: url("../assets/imgs/bg-mobile/bg3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 main .hero5 img {
   width: 85%;
@@ -365,7 +370,8 @@ main .hero5 .content {
   gap: 25px;
 }
 main .hero5 h1 {
-  font-size: 2.2em;
+  font-family: "Oxanium", sans-serif;
+  font-size: 2.5em;
 }
 main .hero5 p {
   font-size: 20px;

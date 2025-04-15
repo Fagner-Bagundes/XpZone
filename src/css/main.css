@@ -312,14 +312,26 @@ main .hero4 {
   flex-direction: column;
   gap: 20px;
 }
+main .hero4 h1 {
+  font-size: 1.5em;
+}
 main .hero4 .GAMERS {
-  font-size: 6em;
+  font-size: 5.5em;
   font-family: "Oxanium", sans-serif;
   font-weight: 700;
   -webkit-text-stroke: 1px #EF6A5D;
   color: transparent;
   margin: 1px;
   margin-block: -40px;
+}
+main .hero4 img {
+  width: 80%;
+  margin-top: -10px;
+}
+main .hero4 .btn {
+  width: 55%;
+  padding: 10px;
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */

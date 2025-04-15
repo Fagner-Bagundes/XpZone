@@ -311,12 +311,25 @@ main .hero4 {
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  position: relative;
+}
+main .hero4 .ghost-gif {
+  width: 100px;
+  position: absolute;
+  left: 1%;
+  bottom: 20%;
+}
+main .hero4 .baloes-gif {
+  width: 100px;
+  position: absolute;
+  right: -1%;
+  top: 20%;
 }
 main .hero4 h1 {
   font-size: 1.5em;
 }
 main .hero4 .GAMERS {
-  font-size: 5.5em;
+  font-size: 5.2em;
   font-family: "Oxanium", sans-serif;
   font-weight: 700;
   -webkit-text-stroke: 1px #EF6A5D;
@@ -325,7 +338,7 @@ main .hero4 .GAMERS {
   margin-block: -40px;
 }
 main .hero4 img {
-  width: 80%;
+  width: 75%;
   margin-top: -10px;
 }
 main .hero4 .btn {

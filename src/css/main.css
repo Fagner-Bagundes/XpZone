@@ -10,6 +10,7 @@ html, body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 img, picture, video, canvas, svg {
@@ -52,12 +53,15 @@ h1 {
   line-height: 110%;
   font-size: 2.4em;
   letter-spacing: -1px;
+  font-family: "Oxanium", sans-serif;
 }
 
 p {
   color: #D9D9D9;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-family: Arial, Helvetica, sans-serif;
+  color: #D9D9D9;
+  line-height: 155.99%;
 }
 
 .search-area {
@@ -98,7 +102,6 @@ p {
 }
 
 .btn {
-  background-color: red;
   width: 100%;
   margin: auto;
   padding: 16px;
@@ -220,6 +223,9 @@ main .hero1 .hero-content {
   margin-top: -110px;
   padding-bottom: 110px;
 }
+main .hero1 .hero-content h1 {
+  font-family: "Oxanium", sans-serif;
+}
 main .hero1 .hero-content ul li {
   display: flex;
   gap: 20px;
@@ -233,6 +239,7 @@ main .hero2 {
   padding-inline: 7%;
   padding-block: 4%;
   gap: 20px;
+  margin-bottom: -90px;
 }
 main .hero2 .homen-aranha {
   width: 100%;
@@ -262,6 +269,7 @@ main .hero3 {
   flex-direction: column;
   justify-content: center;
   padding: 30px;
+  margin-bottom: 100px;
 }
 main .hero3 h1 {
   text-align: center;
@@ -326,12 +334,14 @@ main .hero4 .baloes-gif {
   top: 20%;
 }
 main .hero4 h1 {
-  font-size: 1.5em;
+  font-size: 1.4em;
+  z-index: 1;
 }
 main .hero4 .GAMERS {
+  z-index: -1;
   font-size: 5.2em;
   font-family: "Oxanium", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   -webkit-text-stroke: 1px #EF6A5D;
   color: transparent;
   margin: 1px;
@@ -345,6 +355,7 @@ main .hero4 .btn {
   width: 55%;
   padding: 10px;
   font-size: 1em;
+  margin-top: 20px;
 }
 main .hero5 {
   display: flex;
@@ -373,9 +384,6 @@ main .hero5 h1 {
   font-family: "Oxanium", sans-serif;
   font-size: 2.5em;
 }
-main .hero5 p {
-  font-size: 20px;
-}
 main .hero5 .btn {
   width: 200px;
   font-size: 1.4em;
@@ -384,11 +392,10 @@ main .hero5 .btn {
 
 footer {
   margin-top: 100px;
-  background-color: red;
   background-color: #25064B;
   background: rgba(153, 153, 153, 0.04);
   backdrop-filter: blur(2px);
-  padding-block: 15%;
+  padding-block: 15% 10%;
 }
 footer h1 {
   text-align: center;
@@ -432,7 +439,7 @@ footer .informations h2 {
 footer .informations div {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 footer .bottom {
   display: flex;

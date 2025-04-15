@@ -290,5 +290,20 @@ main .hero3 .icons .barra {
   left: 8%;
   z-index: -1;
 }
+main .hero3 .filtro-city {
+  text-align: center;
+  display: flex;
+  padding: 13px;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+  font-family: "Oxanium", sans-serif;
+  font-size: 1.2em;
+  width: 200px;
+  margin: auto;
+  border: 1px solid white;
+  background: rgba(153, 153, 153, 0.24);
+  backdrop-filter: blur(6.8592057228px);
+}
 
 /*# sourceMappingURL=main.css.map */

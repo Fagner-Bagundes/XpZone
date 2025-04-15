@@ -291,19 +291,35 @@ main .hero3 .icons .barra {
   z-index: -1;
 }
 main .hero3 .filtro-city {
-  text-align: center;
+  width: 200px;
+  border: 1px solid white;
   display: flex;
-  padding: 13px;
-  justify-content: space-between;
   text-align: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 13px;
+  text-align: center;
+  backdrop-filter: blur(6.8592057228px);
+  background: rgba(153, 153, 153, 0.24);
   color: white;
   font-family: "Oxanium", sans-serif;
   font-size: 1.2em;
-  width: 200px;
-  margin: auto;
-  border: 1px solid white;
-  background: rgba(153, 153, 153, 0.24);
-  backdrop-filter: blur(6.8592057228px);
+}
+main .hero4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+main .hero4 .GAMERS {
+  font-size: 6em;
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #EF6A5D;
+  color: transparent;
+  margin: 1px;
+  margin-block: -40px;
 }
 
 /*# sourceMappingURL=main.css.map */

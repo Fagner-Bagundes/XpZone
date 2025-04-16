@@ -12,24 +12,49 @@
     padding-block: 4%
     gap: 20px
     margin-bottom: -90px
+
+    @include B.tablet
+        flex-direction: row-reverse
+        // background-color: red
+        justify-content: space-between
+        padding-right: 0px 
+        padding-left: 5%
+        
+
     
     .homen-aranha
         // background-color: red
-        width: 100%
+      
         margin-right: 8%
-    
+
+        @include B.tablet
+            margin-right: -120px
+            width: 100%
+            max-width: 800px
+            
     .content-hero2
         
         margin-top: -20px
+        margin-right: -100px
         display: flex
         flex-direction: column 
         gap: 20px
         text-align: center
         padding-bottom: 110px
+
+        @include B.tablet
+            // background-color: red
+            padding-block: 0
+            text-align: left
+            max-width: 410px
         h1
             font-family: V.$font-title
             background-image: V.$GB-vertical
-
+            @include B.tablet
+                width: 80%
+        p
+            @include B.tablet
+                width: 100%
         .fogo-gif
             position: absolute
             width: 40px

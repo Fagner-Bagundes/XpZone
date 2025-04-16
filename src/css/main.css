@@ -262,9 +262,34 @@ header p {
   background-position: center bottom;
   margin-top: 20px;
 }
+@media (min-width: 768px) {
+  .hero1 {
+    height: 1300px;
+    flex-direction: row;
+    padding-left: 0px;
+    padding-right: 5%;
+    background-position: bottom bottom;
+    background-size: cover;
+    background-image: url("../assets/imgs/tablet/bg2.png");
+    background-size: 100% 50%;
+    margin-bottom: -180px;
+  }
+}
 .hero1 .kratos {
   width: 80%;
   margin-right: 10%;
+}
+@media (min-width: 768px) {
+  .hero1 .kratos {
+    margin-left: -20%;
+    margin-right: 0px;
+    width: 70%;
+  }
+}
+@media (min-width: 900px) {
+  .hero1 .kratos {
+    margin-left: -14%;
+  }
 }
 .hero1 .hero-content {
   display: flex;
@@ -274,13 +299,23 @@ header p {
   margin-top: -110px;
   padding-bottom: 110px;
 }
+@media (min-width: 768px) {
+  .hero1 .hero-content {
+    padding-block: 50px;
+    text-align: left;
+  }
+}
 .hero1 .hero-content h1 {
   font-family: "Oxanium", sans-serif;
 }
 .hero1 .hero-content ul li {
   display: flex;
-  gap: 20px;
-  padding-block: 10px;
+  gap: 30px;
+  padding-block: 17px;
+  font-size: 1.2em;
+}
+.hero1 .hero-content ul li img {
+  width: 30px;
 }
 
 .hero2 {

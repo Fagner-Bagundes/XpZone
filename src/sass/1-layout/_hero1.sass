@@ -15,9 +15,33 @@
         background-size:  100% 85%
         background-position: center bottom
         margin-top: 20px
+
+        @include B.tablet
+            height: 1300px
+            // background-color: red
+            flex-direction: row
+            padding-left: 0px
+            padding-right: 5%
+            background-position: bottom bottom
+            background-size: cover
+            background-image: url("../assets/imgs/tablet/bg2.png")
+            background-size:  100% 50%
+            margin-bottom: -180px
+            
+            
+
         .kratos
             width: 80%
             margin-right: 10%
+
+            @include B.tablet
+                margin-left: -20%
+                // background-color: red
+                margin-right: 0px
+                width: 70%
+            @include B.tablet2
+                margin-left: -14%
+
         
         .hero-content
             display: flex
@@ -26,6 +50,10 @@
             text-align: center
             margin-top: -110px
             padding-bottom: 110px
+            
+            @include B.tablet
+                padding-block: 50px
+                text-align: left
 
             h1
                 font-family: V.$font-title
@@ -33,5 +61,8 @@
             ul
                 li
                     display: flex
-                    gap: 20px
-                    padding-block: 10px
+                    gap: 30px
+                    padding-block: 17px
+                    font-size: 1.2em
+                    img
+                        width: 30px

@@ -6,7 +6,6 @@
 body
     background-color: V.$background
     color: V.$white
-  
 
 header
     padding-inline: 7%
@@ -23,11 +22,17 @@ header
         display: flex
         justify-content: space-between
         padding-inline: 2%
-        
-        .logo
-            width: 25%
+        a
+            width: 25
+            .logo
+                width: 100%
         .menu-borger
             width: 7%
+            &:hover
+                cursor: pointer
+                filter: brightness(50%)
+
+                
     .content
         padding-top: 67%
         text-align: center
@@ -59,7 +64,15 @@ main
         overflow-x: auto
         white-space: nowrap 
         padding: 20px
-        scrollbar-width: none 
+        scrollbar-width: none
+        img:hover
+            cursor: pointer
+            filter: brightness(250%) contrast(120%)
+            background-color: #0c091b48
+        
+
+
+            
 
     .hero1
         display: flex
@@ -180,6 +193,10 @@ main
             color: V.$white
             font-family: V.$font-title
             font-size: 1.2em
+            &:hover
+                cursor: pointer
+            img
+                rotate: -90deg
 
     .hero4
         display: flex
@@ -243,17 +260,11 @@ main
         background-image: url("../assets/imgs/bg-mobile/bg3.png")
         // background-size: cover
         background-repeat: no-repeat
-        background-size: cover
-        background-position: center
+        background-size:  100% 100%
+        background-position: center bottom
        
-
-
-        
-
-
-
         img
-            width: 85%
+            width: 70%
         
         .content
             display: flex
@@ -292,7 +303,6 @@ footer
         
         
         .country-selection
-            
             display: flex
             justify-content: center
             margin: 20px
@@ -300,24 +310,29 @@ footer
             justify-content: space-between
             align-items: center
             padding: 10px
+            &:hover
+                cursor: pointer
+            .ceta
+                rotate: -90deg
         .redes-sociais
             display: flex
             gap: 20px
-    
+            img:hover
+                cursor: pointer
+                
     .informations
         display: flex
         padding-inline: 7%
         padding-block: 8%
-        justify-content: start
-        gap: 20%
+        justify-content: space-between
+        // gap: 20%
         border-bottom: solid 2px #593D85
         padding-bottom: 35px
         
 
 
         h2
-            font-size: 2em
-            
+            font-size: 1.7em
         div
             display: flex
             flex-direction: column
@@ -332,7 +347,7 @@ footer
         padding-block: 8% 0px
         .btn
             width: 200px
-            padding: 13px
-            font-size: 1.4em
+            padding: 5px
+            font-size: 100%
             margin: 0px
 

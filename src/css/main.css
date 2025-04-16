@@ -90,6 +90,9 @@ p {
 .search-area .search img {
   width: 30px;
 }
+.search-area .search img:hover {
+  cursor: pointer;
+}
 .search-area .box-city {
   text-align: center;
   display: flex;
@@ -99,6 +102,9 @@ p {
   color: white;
   font-family: "Oxanium", sans-serif;
   font-size: 1.2em;
+}
+.search-area .box-city:hover {
+  cursor: pointer;
 }
 .search-area .box-city img {
   width: 30px;
@@ -115,6 +121,9 @@ p {
   color: white;
   font-family: "Oxanium", sans-serif;
   font-size: 1.5em;
+}
+.btn:hover {
+  background-image: linear-gradient(45deg, #db425b 16.1%, #fc9048 61.88%);
 }
 
 .xp-box {
@@ -162,11 +171,18 @@ header nav {
   justify-content: space-between;
   padding-inline: 2%;
 }
-header nav .logo {
-  width: 25%;
+header nav a {
+  width: 25;
+}
+header nav a .logo {
+  width: 100%;
 }
 header nav .menu-borger {
   width: 7%;
+}
+header nav .menu-borger:hover {
+  cursor: pointer;
+  filter: brightness(50%);
 }
 header .content {
   padding-top: 67%;
@@ -201,6 +217,11 @@ main .empresas {
   white-space: nowrap;
   padding: 20px;
   scrollbar-width: none;
+}
+main .empresas img:hover {
+  cursor: pointer;
+  filter: brightness(250%) contrast(120%);
+  background-color: rgba(12, 9, 27, 0.2823529412);
 }
 main .hero1 {
   display: flex;
@@ -322,6 +343,12 @@ main .hero3 .filtro-city {
   font-family: "Oxanium", sans-serif;
   font-size: 1.2em;
 }
+main .hero3 .filtro-city:hover {
+  cursor: pointer;
+}
+main .hero3 .filtro-city img {
+  rotate: -90deg;
+}
 main .hero4 {
   display: flex;
   justify-content: center;
@@ -378,11 +405,11 @@ main .hero5 {
   margin-top: -60px;
   background-image: url("../assets/imgs/bg-mobile/bg3.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% 100%;
+  background-position: center bottom;
 }
 main .hero5 img {
-  width: 85%;
+  width: 70%;
 }
 main .hero5 .content {
   display: flex;
@@ -429,21 +456,29 @@ footer .contato-area .country-selection {
   align-items: center;
   padding: 10px;
 }
+footer .contato-area .country-selection:hover {
+  cursor: pointer;
+}
+footer .contato-area .country-selection .ceta {
+  rotate: -90deg;
+}
 footer .contato-area .redes-sociais {
   display: flex;
   gap: 20px;
+}
+footer .contato-area .redes-sociais img:hover {
+  cursor: pointer;
 }
 footer .informations {
   display: flex;
   padding-inline: 7%;
   padding-block: 8%;
-  justify-content: start;
-  gap: 20%;
+  justify-content: space-between;
   border-bottom: solid 2px #593D85;
   padding-bottom: 35px;
 }
 footer .informations h2 {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 footer .informations div {
   display: flex;
@@ -458,8 +493,8 @@ footer .bottom {
 }
 footer .bottom .btn {
   width: 200px;
-  padding: 13px;
-  font-size: 1.4em;
+  padding: 5px;
+  font-size: 100%;
   margin: 0px;
 }
 

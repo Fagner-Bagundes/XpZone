@@ -1,0 +1,58 @@
+@use '../3-modules/_modules'  as M
+@use '../0-base/_base-mixins' as B
+@use '../2-variebles/_variables' as V
+
+header
+    padding-inline: 7%
+    padding-block: 4%
+    background-image: url("../assets/imgs/bg-mobile/bg1.png")
+    background-position: center center
+    background-size: cover
+    background-repeat: no-repeat
+    // height: 100%
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 86.83%, #120428 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 17.1%, #120428 85.84%, #120428 91.82%), url("../assets/imgs/bg-mobile/bg1.png") lightgray -559.825px -5.123px / 259.175% 101.593% no-repeat, #120428
+
+    @include B.tablet
+        background-color: red
+        
+        
+    
+  
+    nav
+        display: flex
+        justify-content: space-between
+        padding-inline: 2%
+        a
+            width: 25
+            .logo
+                width: 100%
+        .menu-borger
+            width: 7%
+            &:hover
+                cursor: pointer
+                filter: brightness(50%)
+
+                
+    .content
+        padding-top: 67%
+        text-align: center
+
+    h1
+        background-image: V.$GB-vertical
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        font-family: V.$font-title
+        font-weight: 700
+        line-height: 110%
+        font-size: 2.4em
+        letter-spacing: -1px
+        strong
+            -webkit-text-fill-color: V.$white
+            color: V.$white
+
+    p
+        
+        padding-block: 40px
+

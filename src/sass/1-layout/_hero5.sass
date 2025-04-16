@@ -1,0 +1,38 @@
+@use '../3-modules/_modules'  as M
+@use '../0-base/_base-mixins' as B
+@use '../2-variebles/_variables' as V
+    
+.hero5
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    text-align: center
+
+    height: 1100px
+    // border: 1px solid white
+    padding-inline: 7%
+    padding-top: 60px
+    margin-top: -60px
+
+    background-image: url("../assets/imgs/bg-mobile/bg3.png")
+    // background-size: cover
+    background-repeat: no-repeat
+    background-size:  100% 100%
+    background-position: center bottom
+    
+    img
+        width: 70%
+    
+    .content
+        display: flex
+        flex-direction: column
+        gap: 25px
+    h1
+        font-family: V.$font-title  
+        font-size: 2.5em
+
+    .btn
+        width: 200px
+        font-size: 1.4em
+        padding: 9px

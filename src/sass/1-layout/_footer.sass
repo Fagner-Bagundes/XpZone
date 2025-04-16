@@ -1,0 +1,75 @@
+@use '../3-modules/_modules'  as M
+@use '../0-base/_base-mixins' as B
+@use '../2-variebles/_variables' as V
+
+footer
+    margin-top: 100px
+    background-color: V.$secondary-700
+    background: rgba(153, 153, 153, 0.04)
+    backdrop-filter: blur(2px)
+
+    padding-block: 15% 10%
+    
+    h1
+        text-align: center
+        font-family: V.$font-title
+        margin-bottom: 50px
+        
+    .contato-area
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 15px
+        border-bottom: solid 2px #593D85
+        padding-bottom: 35px
+        
+        
+        .country-selection
+            display: flex
+            justify-content: center
+            margin: 20px
+            width: 250px
+            justify-content: space-between
+            align-items: center
+            padding: 10px
+            &:hover
+                cursor: pointer
+            .ceta
+                rotate: -90deg
+        .redes-sociais
+            display: flex
+            gap: 20px
+            img:hover
+                cursor: pointer
+                
+    .informations
+        display: flex
+        padding-inline: 7%
+        padding-block: 8%
+        justify-content: space-between
+        // gap: 20%
+        border-bottom: solid 2px #593D85
+        padding-bottom: 35px
+        
+
+
+        h2
+            font-size: 1.7em
+        div
+            display: flex
+            flex-direction: column
+            gap: 25px
+            
+
+
+    .bottom
+        display: flex
+        justify-content: space-between
+        padding-inline: 7%
+        padding-block: 8% 0px
+        .btn
+            width: 200px
+            padding: 5px
+            font-size: 100%
+            margin: 0px

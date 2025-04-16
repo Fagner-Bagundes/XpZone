@@ -1,0 +1,37 @@
+@use '../3-modules/_modules'  as M
+@use '../0-base/_base-mixins' as B
+@use '../2-variebles/_variables' as V
+
+.hero1
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-inline: 7%
+        padding-block: 4%
+
+        background-image: url("../assets/imgs/bg-mobile/bg2.png")
+        background-repeat: no-repeat
+        background-size:  100% 85%
+        background-position: center bottom
+        margin-top: 20px
+        .kratos
+            width: 80%
+            margin-right: 10%
+        
+        .hero-content
+            display: flex
+            flex-direction: column 
+            gap: 20px
+            text-align: center
+            margin-top: -110px
+            padding-bottom: 110px
+
+            h1
+                font-family: V.$font-title
+    
+            ul
+                li
+                    display: flex
+                    gap: 20px
+                    padding-block: 10px

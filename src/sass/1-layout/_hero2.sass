@@ -1,0 +1,38 @@
+@use '../3-modules/_modules'  as M
+@use '../0-base/_base-mixins' as B
+@use '../2-variebles/_variables' as V
+
+.hero2
+    // background-color: red
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-inline: 7%
+    padding-block: 4%
+    gap: 20px
+    margin-bottom: -90px
+    
+    .homen-aranha
+        // background-color: red
+        width: 100%
+        margin-right: 8%
+    
+    .content-hero2
+        
+        margin-top: -20px
+        display: flex
+        flex-direction: column 
+        gap: 20px
+        text-align: center
+        padding-bottom: 110px
+        h1
+            font-family: V.$font-title
+            background-image: V.$GB-vertical
+
+        .fogo-gif
+            position: absolute
+            width: 40px
+            height: 40px
+            top: 50%
+            right: 33%

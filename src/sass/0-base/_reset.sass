@@ -1,0 +1,64 @@
+@use '../2-variebles/_variables' as V
+*, *::before, *::after
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+  
+
+
+
+html, body
+  height: 100%
+  font-family: sans-serif
+  line-height: 1.5
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  overflow-x: hidden
+img, picture, video, canvas, svg
+  display: block
+  max-width: 100%
+
+input, button, textarea, select
+  font: inherit
+  outline: none
+  border: none
+  background: none
+
+a
+  text-decoration: none
+  color: inherit
+
+ul, ol
+  list-style: none
+  color: V.$text-color
+  font-size: 1.2em
+  font-family: Arial, Helvetica, sans-serif
+  color: #D9D9D9
+  line-height: 155.99%
+
+button
+  cursor: pointer
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+h1
+  font-size: 2.5em
+  background-image: V.$GB-vertical
+  background-clip: text
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  line-height: 110%
+  font-size: 2.4em
+  letter-spacing: -1px
+  font-family: V.$font-title
+p
+  color: V.$text-color
+  font-size: 1.2em
+  font-family: Arial, Helvetica, sans-serif
+  color: #D9D9D9
+  line-height: 155.99%
+  // background-color: red
+  

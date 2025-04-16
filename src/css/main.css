@@ -74,6 +74,12 @@ p {
   background: rgba(153, 153, 153, 0.24);
   backdrop-filter: blur(6.8592057228px);
 }
+@media (min-width: 768px) {
+  .search-area {
+    width: 350px;
+    height: 120px;
+  }
+}
 .search-area .search {
   border-bottom: solid 1px #D9D9D9;
   text-align: center;
@@ -86,6 +92,11 @@ p {
   font-size: 1.3em;
   width: 80%;
   height: 40px;
+}
+@media (min-width: 768px) {
+  .search-area .search input {
+    height: 35px;
+  }
 }
 .search-area .search img {
   width: 30px;
@@ -101,7 +112,12 @@ p {
   text-align: center;
   color: white;
   font-family: "Oxanium", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
+}
+@media (min-width: 768px) {
+  .search-area .box-city {
+    height: 35px;
+  }
 }
 .search-area .box-city:hover {
   cursor: pointer;
@@ -155,15 +171,23 @@ p {
 header {
   padding-inline: 7%;
   padding-block: 4%;
-  background-image: url("../assets/imgs/bg-mobile/bg1.png");
-  background-position: center center;
+  background-image: url("../assets/imgs/mobile/bg1.png");
+  background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 86.83%, #120428 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 17.1%, #120428 85.84%, #120428 91.82%), url("../assets/imgs/bg-mobile/bg1.png") lightgray -559.825px -5.123px/259.175% 101.593% no-repeat, #120428;
 }
 @media (min-width: 768px) {
   header {
-    background-color: red;
+    background-image: url("../assets/imgs/tablet/bg1.png");
+    height: 700px;
+    background-size: cover;
+    background-position: 20% left;
+    padding-inline: 5%;
+  }
+}
+@media (min-width: 900px) {
+  header {
+    height: 780px;
   }
 }
 header nav {
@@ -188,6 +212,13 @@ header .content {
   padding-top: 67%;
   text-align: center;
 }
+@media (min-width: 768px) {
+  header .content {
+    text-align: start;
+    padding-top: 130px;
+    font-size: 0.9em;
+  }
+}
 header h1 {
   background-image: linear-gradient(45deg, #E54A64 16.1%, #FE9652 61.88%);
   background-clip: text;
@@ -203,8 +234,19 @@ header h1 strong {
   -webkit-text-fill-color: white;
   color: white;
 }
+@media (min-width: 768px) {
+  header h1 {
+    width: 360px;
+  }
+}
 header p {
   padding-block: 40px;
+}
+@media (min-width: 768px) {
+  header p {
+    width: 350px;
+    font-size: 1.1em;
+  }
 }
 
 .hero1 {
@@ -214,7 +256,7 @@ header p {
   align-items: center;
   padding-inline: 7%;
   padding-block: 4%;
-  background-image: url("../assets/imgs/bg-mobile/bg2.png");
+  background-image: url("../assets/imgs/mobile/bg2.png");
   background-repeat: no-repeat;
   background-size: 100% 85%;
   background-position: center bottom;
@@ -298,6 +340,7 @@ header p {
   font-family: Arial, Helvetica, sans-serif;
   color: #D9D9D9;
   line-height: 155.99%;
+  position: relative;
 }
 .hero3 .icons .icon .icone {
   width: 80px;
@@ -311,7 +354,7 @@ header p {
   height: 430px;
   background-color: #2F0C66;
   top: 15%;
-  left: 8%;
+  left: 34px;
   z-index: -1;
 }
 .hero3 .filtro-city {
@@ -391,7 +434,7 @@ header p {
   padding-inline: 7%;
   padding-top: 60px;
   margin-top: -60px;
-  background-image: url("../assets/imgs/bg-mobile/bg3.png");
+  background-image: url("../assets/imgs/mobile/bg3.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center bottom;
@@ -507,77 +550,10 @@ main .empresas img:hover {
   filter: brightness(250%) contrast(120%);
   background-color: rgba(12, 9, 27, 0.2823529412);
 }
-
-footer {
-  margin-top: 100px;
-  background-color: #25064B;
-  background: rgba(153, 153, 153, 0.04);
-  backdrop-filter: blur(2px);
-  padding-block: 15% 10%;
-}
-footer h1 {
-  text-align: center;
-  font-family: "Oxanium", sans-serif;
-  margin-bottom: 50px;
-}
-footer .contato-area {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  border-bottom: solid 2px #593D85;
-  padding-bottom: 35px;
-}
-footer .contato-area .country-selection {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  width: 250px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-footer .contato-area .country-selection:hover {
-  cursor: pointer;
-}
-footer .contato-area .country-selection .ceta {
-  rotate: -90deg;
-}
-footer .contato-area .redes-sociais {
-  display: flex;
-  gap: 20px;
-}
-footer .contato-area .redes-sociais img:hover {
-  cursor: pointer;
-}
-footer .informations {
-  display: flex;
-  padding-inline: 7%;
-  padding-block: 8%;
-  justify-content: space-between;
-  border-bottom: solid 2px #593D85;
-  padding-bottom: 35px;
-}
-footer .informations h2 {
-  font-size: 1.7em;
-}
-footer .informations div {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-footer .bottom {
-  display: flex;
-  justify-content: space-between;
-  padding-inline: 7%;
-  padding-block: 8% 0px;
-}
-footer .bottom .btn {
-  width: 200px;
-  padding: 5px;
-  font-size: 100%;
-  margin: 0px;
+@media (min-width: 768px) {
+  main .empresas {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

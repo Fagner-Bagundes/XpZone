@@ -8,6 +8,10 @@
     background: rgba(153, 153, 153, 0.24)
     backdrop-filter: blur(6.859205722808838px)
 
+    @include B.tablet
+        width: 350px
+        height: 120px
+
     .search
         border-bottom: solid 1px V.$text-color
         text-align: center
@@ -21,6 +25,9 @@
             width: 80%
             height: 40px
 
+            @include B.tablet
+                height: 35px
+
         img
             width: 30px
             &:hover
@@ -33,7 +40,10 @@
         text-align: center
         color: V.$white
         font-family: V.$font-title
-        font-size: 1.2em
+        font-size: 1.1em
+
+        @include B.tablet
+            height: 35px
 
         &:hover
             cursor: pointer

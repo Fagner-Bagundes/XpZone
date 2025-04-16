@@ -490,13 +490,23 @@ header p {
   width: 100px;
   position: absolute;
   left: 1%;
-  bottom: 20%;
+  bottom: 10%;
+}
+@media (min-width: 768px) {
+  .hero4 .ghost-gif {
+    width: 160px;
+  }
 }
 .hero4 .baloes-gif {
   width: 100px;
   position: absolute;
   right: -1%;
   top: 20%;
+}
+@media (min-width: 768px) {
+  .hero4 .baloes-gif {
+    width: 160px;
+  }
 }
 .hero4 h1 {
   font-size: 1.4em;
@@ -512,6 +522,12 @@ header p {
   margin: 1px;
   margin-block: -40px;
 }
+@media (min-width: 768px) {
+  .hero4 .GAMERS {
+    font-size: 9.2em;
+    margin-bottom: -80px;
+  }
+}
 .hero4 img {
   width: 75%;
   margin-top: -10px;
@@ -521,6 +537,13 @@ header p {
   padding: 10px;
   font-size: 1em;
   margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .hero4 .btn {
+    font-size: 1.5em;
+    padding: 20px 10px;
+    width: 50%;
+  }
 }
 
 .hero5 {

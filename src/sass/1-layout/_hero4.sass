@@ -15,13 +15,17 @@
         width: 100px
         position: absolute
         left: 1%
-        bottom: 20%
+        bottom: 10%
+        @include B.tablet
+            width: 160px
 
     .baloes-gif
         width: 100px
         position: absolute
         right: -1%
         top: 20%
+        @include B.tablet
+            width: 160px
 
     h1
         font-size: 1.4em
@@ -36,6 +40,10 @@
         color: transparent 
         margin: 1px
         margin-block: -40px
+
+        @include B.tablet
+            font-size: 9.2em
+            margin-bottom: -80px
     
     img
         width: 75%
@@ -47,3 +55,7 @@
         padding: 10px
         font-size: 1em
         margin-top: 20px
+        @include B.tablet
+            font-size: 1.5em
+            padding: 20px 10px
+            width: 50%

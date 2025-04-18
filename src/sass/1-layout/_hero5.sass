@@ -20,9 +20,16 @@
     background-repeat: no-repeat
     background-size:  100% 100%
     background-position: center bottom
+
+    @include B.tablet
+        flex-direction: row
+        
     
     img
         width: 70%
+
+        @include B.tablet
+            width: 60%
     
     .content
         display: flex

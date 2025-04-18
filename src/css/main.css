@@ -146,6 +146,9 @@ p {
   position: relative;
   display: flex;
   justify-content: center;
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
 }
 .xp-box img {
   height: 130px;
@@ -350,7 +353,6 @@ header p {
 }
 .hero2 .content-hero2 {
   margin-top: -20px;
-  margin-right: -100px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -359,6 +361,7 @@ header p {
 }
 @media (min-width: 768px) {
   .hero2 .content-hero2 {
+    margin-right: -100px;
     padding-block: 0;
     text-align: left;
     max-width: 410px;
@@ -565,8 +568,18 @@ header p {
   background-size: 100% 100%;
   background-position: center bottom;
 }
+@media (min-width: 768px) {
+  .hero5 {
+    flex-direction: row;
+  }
+}
 .hero5 img {
   width: 70%;
+}
+@media (min-width: 768px) {
+  .hero5 img {
+    width: 60%;
+  }
 }
 .hero5 .content {
   display: flex;

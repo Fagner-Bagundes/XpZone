@@ -7,8 +7,10 @@ footer
     background-color: V.$secondary-700
     background: rgba(153, 153, 153, 0.04)
     backdrop-filter: blur(2px)
-
     padding-block: 10%
+    @include B.tablet
+        padding-top: 0px
+        margin-top: -250px
     
     h1
         text-align: center
@@ -25,9 +27,10 @@ footer
         padding-inline: 5%
 
         @include B.tablet
+            padding-block: 60px
             flex-direction: row
             align-items: center
-            padding-block: 35px 
+            // padding-block: 35px 
             h1
                 text-align: left
                 margin: 0px

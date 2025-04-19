@@ -625,6 +625,12 @@ footer {
   backdrop-filter: blur(2px);
   padding-block: 10%;
 }
+@media (min-width: 768px) {
+  footer {
+    padding-top: 0px;
+    margin-top: -250px;
+  }
+}
 footer h1 {
   text-align: center;
   font-family: "Oxanium", sans-serif;
@@ -641,9 +647,9 @@ footer .contato {
 }
 @media (min-width: 768px) {
   footer .contato {
+    padding-block: 60px;
     flex-direction: row;
     align-items: center;
-    padding-block: 35px;
   }
   footer .contato h1 {
     text-align: left;

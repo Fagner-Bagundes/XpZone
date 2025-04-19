@@ -623,42 +623,67 @@ footer {
   background-color: #25064B;
   background: rgba(153, 153, 153, 0.04);
   backdrop-filter: blur(2px);
-  padding-block: 15% 10%;
+  padding-block: 10%;
 }
 footer h1 {
   text-align: center;
   font-family: "Oxanium", sans-serif;
   margin-bottom: 50px;
 }
-footer .contato-area {
+footer .contato {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 2px #593D85;
+  padding-bottom: 35px;
+  padding-inline: 5%;
+}
+@media (min-width: 768px) {
+  footer .contato {
+    flex-direction: row;
+    align-items: center;
+    padding-block: 35px;
+  }
+  footer .contato h1 {
+    text-align: left;
+    margin: 0px;
+  }
+  footer .contato h1 strong {
+    display: block;
+  }
+}
+footer .contato .contato-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  border-bottom: solid 2px #593D85;
-  padding-bottom: 35px;
 }
-footer .contato-area .country-selection {
+footer .contato .contato-area .country-selection {
   display: flex;
   justify-content: center;
-  margin: 20px;
   width: 250px;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
-footer .contato-area .country-selection:hover {
+footer .contato .contato-area .country-selection:hover {
   cursor: pointer;
 }
-footer .contato-area .country-selection .ceta {
+footer .contato .contato-area .country-selection .ceta {
   rotate: -90deg;
 }
-footer .contato-area .redes-sociais {
+footer .contato .contato-area .redes-sociais {
   display: flex;
   gap: 20px;
 }
-footer .contato-area .redes-sociais img:hover {
+@media (min-width: 768px) {
+  footer .contato .contato-area .redes-sociais img {
+    width: 27px;
+  }
+}
+footer .contato .contato-area .redes-sociais img:hover {
   cursor: pointer;
 }
 footer .informations {
@@ -667,7 +692,17 @@ footer .informations {
   padding-block: 8%;
   justify-content: space-between;
   border-bottom: solid 2px #593D85;
-  padding-bottom: 35px;
+}
+@media (min-width: 768px) {
+  footer .informations {
+    justify-content: start;
+    gap: 60px;
+  }
+  footer .informations .footer-hero {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+  }
 }
 footer .informations h2 {
   font-size: 1.7em;

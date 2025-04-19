@@ -8,42 +8,60 @@ footer
     background: rgba(153, 153, 153, 0.04)
     backdrop-filter: blur(2px)
 
-    padding-block: 15% 10%
+    padding-block: 10%
     
     h1
         text-align: center
         font-family: V.$font-title
         margin-bottom: 50px
-        
-    .contato-area
+    
+    .contato
         display: flex
+        justify-content: space-between
         flex-direction: column
-        justify-content: center
         align-items: center
-        gap: 15px
         border-bottom: solid 2px #593D85
         padding-bottom: 35px
+        padding-inline: 5%
 
-        @include B.tablet        
-        
-        .country-selection
-            display: flex
-            justify-content: center
-            margin: 20px
-            width: 250px
-            justify-content: space-between
+        @include B.tablet
+            flex-direction: row
             align-items: center
-            padding: 10px
-            &:hover
-                cursor: pointer
-            .ceta
-                rotate: -90deg
-        .redes-sociais
+            padding-block: 35px 
+            h1
+                text-align: left
+                margin: 0px
+                strong
+                    display: block
+        .contato-area
             display: flex
-            gap: 20px
-            img:hover
-                cursor: pointer
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            gap: 15px
+
+            .country-selection
+                display: flex
+                justify-content: center
+                // margin: 20px
+                width: 250px
+                justify-content: space-between
+                align-items: center
+                padding: 10px
+                &:hover
+                    cursor: pointer
+                .ceta
+                    rotate: -90deg
+            .redes-sociais
+                display: flex
+                gap: 20px
+                @include B.tablet
                 
+                    img
+                        width: 27px
+                img:hover
+                    cursor: pointer
+                    
     .informations
         display: flex
         padding-inline: 7%
@@ -51,9 +69,16 @@ footer
         justify-content: space-between
         // gap: 20%
         border-bottom: solid 2px #593D85
-        padding-bottom: 35px
-        
 
+        @include B.tablet
+            justify-content: start
+            gap: 60px
+            .footer-hero
+                // background-color: red
+                display: flex
+                flex-direction: row
+                gap: 60px
+                
 
         h2
             font-size: 1.7em
@@ -61,8 +86,7 @@ footer
             display: flex
             flex-direction: column
             gap: 25px
-            
-
+        
 
     .bottom
         display: flex

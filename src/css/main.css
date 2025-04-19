@@ -248,6 +248,7 @@ header {
     padding-block: 4%;
     background-position: center center;
     height: 850px;
+    margin-bottom: -80px;
   }
 }
 header nav {
@@ -385,6 +386,14 @@ header .content p {
     justify-content: space-between;
   }
 }
+@media (min-width: 1024px) {
+  .hero1 {
+    background-image: url("../assets/imgs/desktop/bg-2.png");
+    justify-content: center;
+    gap: 25px;
+    margin-top: -190px;
+  }
+}
 .hero1 .kratos {
   width: 80%;
   max-width: 700px;
@@ -400,6 +409,12 @@ header .content p {
 @media (min-width: 900px) {
   .hero1 .kratos {
     margin-left: -14%;
+  }
+}
+@media (min-width: 1024px) {
+  .hero1 .kratos {
+    margin-left: 0px;
+    max-width: 500px;
   }
 }
 .hero1 .hero-content {

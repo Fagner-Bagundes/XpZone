@@ -19,6 +19,10 @@
         justify-content: space-between
         padding-right: 0px 
         padding-left: 5%
+
+    @include B.desktops
+        justify-content: center
+        gap: 50px
         
 
     
@@ -30,6 +34,10 @@
             margin-right: -120px
             width: 100%
             max-width: 800px
+
+        @include B.desktops
+            margin-top: -100px
+            // background-color: blue
             
     .content-hero2
         
@@ -42,10 +50,12 @@
 
         @include B.tablet
             margin-right: -100px
-            // background-color: red
             padding-block: 0
             text-align: left
             max-width: 410px
+
+        @include B.desktops
+            max-width: 450px
         h1
             font-family: V.$font-title
             background-image: V.$GB-vertical

@@ -193,6 +193,12 @@ p {
     justify-content: start;
   }
 }
+@media (min-width: 1024px) {
+  .xp-box {
+    width: 80%;
+    justify-content: center;
+  }
+}
 .xp-box img {
   height: 130px;
   width: 95%;
@@ -463,6 +469,12 @@ header .content p {
     padding-left: 5%;
   }
 }
+@media (min-width: 1024px) {
+  .hero2 {
+    justify-content: center;
+    gap: 50px;
+  }
+}
 .hero2 .homen-aranha {
   margin-right: 8%;
 }
@@ -471,6 +483,11 @@ header .content p {
     margin-right: -120px;
     width: 100%;
     max-width: 800px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero2 .homen-aranha {
+    margin-top: -100px;
   }
 }
 .hero2 .content-hero2 {
@@ -487,6 +504,11 @@ header .content p {
     padding-block: 0;
     text-align: left;
     max-width: 410px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero2 .content-hero2 {
+    max-width: 450px;
   }
 }
 .hero2 .content-hero2 h1 {

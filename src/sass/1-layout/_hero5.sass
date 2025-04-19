@@ -23,21 +23,41 @@
 
     @include B.tablet
         flex-direction: row
+        text-align: left
+        background-image: url("../assets/imgs/tablet/bg3.png")
+        justify-content: space-between
+        background-size: cover
+        background-position: center center
+        height: 1300px
+    @include B.tablet2
+        background-size: 100% 100%
+        background-position: center center
+    
+
+            
         
     
     img
         width: 70%
 
         @include B.tablet
-            width: 60%
+            width: 50%
+            max-width: 500px
+            margin-top: -100px
+            
     
     .content
         display: flex
         flex-direction: column
         gap: 25px
+        
+        @include B.tablet
+            margin-top: -150px
     h1
         font-family: V.$font-title  
-        font-size: 2.5em
+        font-size: 2.1em
+        strong
+            display: block
 
     .btn
         width: 200px

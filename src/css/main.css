@@ -633,6 +633,13 @@ header .content p {
   gap: 20px;
   position: relative;
 }
+@media (min-width: 768px) {
+  .hero4 {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+  }
+}
 .hero4 .ghost-gif {
   width: 100px;
   position: absolute;
@@ -644,6 +651,11 @@ header .content p {
     width: 160px;
   }
 }
+@media (min-width: 1024px) {
+  .hero4 .ghost-gif {
+    left: 3%;
+  }
+}
 .hero4 .baloes-gif {
   width: 100px;
   position: absolute;
@@ -653,6 +665,11 @@ header .content p {
 @media (min-width: 768px) {
   .hero4 .baloes-gif {
     width: 160px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero4 .baloes-gif {
+    right: 3%;
   }
 }
 .hero4 h1 {
@@ -683,6 +700,11 @@ header .content p {
   width: 75%;
   margin-top: -10px;
 }
+@media (min-width: 1024px) {
+  .hero4 img {
+    max-width: 1000px;
+  }
+}
 .hero4 .btn {
   width: 55%;
   padding: 10px;
@@ -694,6 +716,11 @@ header .content p {
     font-size: 1.5em;
     padding: 20px 10px;
     width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .hero4 .btn {
+    max-width: 400px;
   }
 }
 

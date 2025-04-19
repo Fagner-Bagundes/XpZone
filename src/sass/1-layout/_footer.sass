@@ -8,11 +8,16 @@ footer
     background: rgba(153, 153, 153, 0.04)
     backdrop-filter: blur(2px)
     padding-block: 10%
-    
+
     @include B.tablet
         padding-top: 0px
         margin-top: -250px
-    
+
+    @include B.desktops
+        margin-top: -500px
+        .content
+            display: flex
+            border-bottom: solid 2px #593D85
     h1
         text-align: center
         font-family: V.$font-title
@@ -23,7 +28,6 @@ footer
         justify-content: space-between
         flex-direction: column
         align-items: center
-        border-bottom: solid 2px #593D85
         padding-bottom: 30px
         padding-inline: 5%
 
@@ -38,6 +42,14 @@ footer
                 margin: 0px
                 strong
                     display: block
+        @include B.desktops
+            flex-direction: column
+            justify-content: start
+            gap: 50px
+            h1
+                width: 260px
+                
+
         .contato-area
             display: flex
             flex-direction: column
@@ -73,7 +85,6 @@ footer
         padding-block: 8%
         justify-content: space-between
         // gap: 20%
-        border-bottom: solid 2px #593D85
 
         @include B.tablet
             justify-content: start

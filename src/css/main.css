@@ -829,6 +829,15 @@ footer {
     margin-top: -250px;
   }
 }
+@media (min-width: 1024px) {
+  footer {
+    margin-top: -500px;
+  }
+  footer .content {
+    display: flex;
+    border-bottom: solid 2px #593D85;
+  }
+}
 footer h1 {
   text-align: center;
   font-family: "Oxanium", sans-serif;
@@ -839,7 +848,6 @@ footer .contato {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  border-bottom: solid 2px #593D85;
   padding-bottom: 30px;
   padding-inline: 5%;
 }
@@ -856,6 +864,16 @@ footer .contato {
   }
   footer .contato h1 strong {
     display: block;
+  }
+}
+@media (min-width: 1024px) {
+  footer .contato {
+    flex-direction: column;
+    justify-content: start;
+    gap: 50px;
+  }
+  footer .contato h1 {
+    width: 260px;
   }
 }
 footer .contato .contato-area {
@@ -896,7 +914,6 @@ footer .informations {
   padding-inline: 7%;
   padding-block: 8%;
   justify-content: space-between;
-  border-bottom: solid 2px #593D85;
 }
 @media (min-width: 768px) {
   footer .informations {

@@ -150,6 +150,12 @@ p {
   max-width: 450px;
   margin: auto;
 }
+@media (min-width: 768px) {
+  .xp-box {
+    margin: 0px;
+    justify-content: start;
+  }
+}
 .xp-box img {
   height: 130px;
   width: 95%;
@@ -164,6 +170,11 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+@media (min-width: 768px) {
+  .xp-box .xp-txt {
+    left: 15%;
+  }
 }
 .xp-box .xp-txt strong {
   -webkit-text-fill-color: white;
@@ -206,6 +217,11 @@ header nav a .logo {
 }
 header nav .menu-borger {
   width: 7%;
+}
+@media (min-width: 768px) {
+  header nav .menu-borger {
+    width: 5%;
+  }
 }
 header nav .menu-borger:hover {
   cursor: pointer;
@@ -746,6 +762,12 @@ main .empresas {
   white-space: nowrap;
   padding: 20px;
   scrollbar-width: none;
+}
+@media (min-width: 768px) {
+  main .empresas img {
+    border: solid 1px red;
+    max-width: 200px;
+  }
 }
 main .empresas img:hover {
   cursor: pointer;

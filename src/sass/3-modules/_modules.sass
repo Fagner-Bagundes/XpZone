@@ -73,6 +73,10 @@
     width: 100%
     max-width: 450px
     margin: auto
+
+    @include B.tablet
+        margin: 0px
+        justify-content: start
     img
         height: 130px
         width: 95%
@@ -89,6 +93,8 @@
         -webkit-text-fill-color: transparent
         font-weight: bold
 
+        @include B.tablet
+            left: 15%
         strong
             -webkit-text-fill-color: V.$white
             color: V.$white    

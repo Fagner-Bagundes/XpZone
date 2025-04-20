@@ -2,9 +2,15 @@ const compreTxt = document.querySelector(`#compre`)
 const ghost = document.querySelector(`.ghost-gif`)
 const baloes = document.querySelector(`.baloes-gif`)
 const card = document.querySelector(`#card`)
-const pl = [`Venda`, `Troque`, `Compre`]
+
+const palavras = [`Venda`, `Troque`, `Compre`]
+let valorAnimacao = 0
 let i = 0
 
+function trocaDePalavras() {
+    compreTxt.innerHTML = palavras[i]
+    i < 2 ? i++  : i = 0
+}
 
 function subirDescerGhost(valor) {
     let bottom = getComputedStyle(ghost).marginBottom
@@ -18,42 +24,40 @@ function subirDescerBaloes(valor) {
     if (Top === valor ) baloes.style.marginTop = `0px`
 }
 
-const trocaDePalavras = setInterval(() => {
-    compreTxt.innerHTML = pl[i]
-    i < 2 ? i++  : i = 0
-}, 1000);
 
+function animacaoCard(params) { 
+    function addValor(params) {
+        card.style.paddingTop = `${valorAnimacao.toString()}px`
+    }
+    
+    function descendo() {
+        let descer = setInterval(() => {
+            if (valorAnimacao< 20) {
+                ++valorAnimacao
+                addValor()
+            } else{
+                clearInterval(descer)
+                subindo()
+            }
+            }, 80);
+    }
+    
+    function subindo() {
+        let subir = setInterval(() => {
+            if (valorAnimacao> 0) {
+                --valorAnimacao
+                addValor()
+            } else{
+                clearInterval(subir)
+                descendo()
+            }
+            }, 80);
+    }
+    descendo()
+}
+
+
+setInterval(trocaDePalavras, 1000);
 setInterval(() => subirDescerGhost(`200px`), 2000);
 setInterval(() => subirDescerBaloes(`150px`), 2000);
-
-let valor = 0
-function subindo(params) {
-    let subir = setInterval(() => {
-        if (valor> 0) {
-            --valor
-            let Top = getComputedStyle(card).paddingTop
-            card.style.paddingTop = `${valor.toString()}px`
-            console.log(Top);
-        } else{
-            clearInterval(subir)
-            descendo()
-        }
-        }, 50);
-}
-
-function descendo(params) {
-    let descer = setInterval(() => {
-        if (valor< 30) {
-            ++valor
-            let Top = getComputedStyle(card).paddingTop
-            card.style.paddingTop = `${valor.toString()}px`
-            console.log(Top);
-        } else{
-            clearInterval(descer)
-            subindo()
-        }
-        }, 50);
-}
-
-
-descendo()
+animacaoCard()

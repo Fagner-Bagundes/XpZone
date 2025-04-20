@@ -100,9 +100,11 @@ footer
         display: flex
         padding-inline: 7%
         padding-block: 8%
-        justify-content: space-between
-        // gap: 20%
+        justify-content: space-around
         border-bottom: solid 2px #593D85
+        @include B.mobileSmall
+            gap: 5%
+            text-align: center
         
 
         @include B.tablet
@@ -135,10 +137,15 @@ footer
         justify-content: space-between
         align-items: center
         padding-inline: 7%
-        height: 100px
-        
+        height: 100px        
+        @include B.mobileSmall
+            img
+                display: none
+            justify-content: center
         .btn
-            width: 200px
+            width: 150px
             padding: 5px
             font-size: 100%
             margin: 0px
+
+                

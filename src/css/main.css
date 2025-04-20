@@ -611,6 +611,11 @@ header .content p {
   left: 34px;
   z-index: -1;
 }
+@media (max-width: 426px) {
+  .hero3 .icons .barra {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .hero3 .icons .barra {
     display: none;
@@ -785,6 +790,7 @@ header .content p {
 .hero5 .card-area {
   height: 500px;
   width: 380px;
+  padding-left: 20px;
   position: relative;
 }
 .hero5 .card-area img {
@@ -793,7 +799,7 @@ header .content p {
 @media (min-width: 768px) {
   .hero5 .card-area {
     width: 1500px;
-    margin-top: -300px;
+    margin-top: -150px;
   }
 }
 @media (min-width: 1024px) {
@@ -955,8 +961,14 @@ footer .informations {
   display: flex;
   padding-inline: 7%;
   padding-block: 8%;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: solid 2px #593D85;
+}
+@media (max-width: 426px) {
+  footer .informations {
+    gap: 5%;
+    text-align: center;
+  }
 }
 @media (min-width: 768px) {
   footer .informations {
@@ -993,8 +1005,16 @@ footer .bottom {
   padding-inline: 7%;
   height: 100px;
 }
+@media (max-width: 426px) {
+  footer .bottom {
+    justify-content: center;
+  }
+  footer .bottom img {
+    display: none;
+  }
+}
 footer .bottom .btn {
-  width: 200px;
+  width: 150px;
   padding: 5px;
   font-size: 100%;
   margin: 0px;

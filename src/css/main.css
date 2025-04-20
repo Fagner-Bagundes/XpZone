@@ -659,7 +659,7 @@ header .content p {
   position: absolute;
   left: 1%;
   bottom: 10%;
-  transition: margin-bottom 5s;
+  transition: margin-bottom 3s;
 }
 @media (min-width: 768px) {
   .hero4 .ghost-gif {

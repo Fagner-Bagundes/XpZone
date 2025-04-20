@@ -5,21 +5,16 @@ const pl = [`Venda`, `Troque`, `Compre`]
 let i = 0
 
 
-function subirDescer(valor) {
+function subirDescerGhost(valor) {
     let bottom = getComputedStyle(ghost).marginBottom
-    let top = getComputedStyle(baloes).marginTop
-    
-    
-
     ghost.style.marginBottom = valor
-    baloes.style.marginTop = `0px`
-
-    
     if (bottom === valor ) ghost.style.marginBottom = `0px`
-    if (top < valor ) baloes.style.marginTop = valor
-    console.log(baloes);
-    
-    
+}
+
+function subirDescerBaloes(valor) {
+    let Top = getComputedStyle(baloes).marginTop
+    baloes.style.marginTop = valor
+    if (Top === valor ) baloes.style.marginTop = `0px`
 }
 const trocaDePalavras = setInterval(() => {
     compreTxt.innerHTML = pl[i]
@@ -27,5 +22,6 @@ const trocaDePalavras = setInterval(() => {
 }, 1000);
 
 
-setInterval(() => subirDescer(`200px`), 2000);
+setInterval(() => subirDescerGhost(`200px`), 2000);
+setInterval(() => subirDescerBaloes(`150px`), 2000);
 

@@ -38,12 +38,12 @@ function subindo(params) {
             clearInterval(subir)
             descendo()
         }
-        }, 20);
+        }, 50);
 }
 
 function descendo(params) {
     let descer = setInterval(() => {
-        if (valor< 60) {
+        if (valor< 30) {
             ++valor
             let Top = getComputedStyle(card).paddingTop
             card.style.paddingTop = `${valor.toString()}px`
@@ -52,7 +52,7 @@ function descendo(params) {
             clearInterval(descer)
             subindo()
         }
-        }, 20);
+        }, 50);
 }
 
 

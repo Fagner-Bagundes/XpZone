@@ -784,6 +784,7 @@ header .content p {
 }
 .hero5 img {
   width: 70%;
+  transition: margin-top 1s;
 }
 @media (min-width: 768px) {
   .hero5 img {
@@ -795,6 +796,7 @@ header .content p {
 @media (min-width: 1024px) {
   .hero5 img {
     max-width: 400px;
+    margin-top: -360px;
   }
 }
 .hero5 .content {

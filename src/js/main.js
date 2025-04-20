@@ -1,6 +1,7 @@
 const compreTxt = document.querySelector(`#compre`)
 const ghost = document.querySelector(`.ghost-gif`)
 const baloes = document.querySelector(`.baloes-gif`)
+const card = document.querySelector(`#card`)
 const pl = [`Venda`, `Troque`, `Compre`]
 let i = 0
 
@@ -16,12 +17,43 @@ function subirDescerBaloes(valor) {
     baloes.style.marginTop = valor
     if (Top === valor ) baloes.style.marginTop = `0px`
 }
+
 const trocaDePalavras = setInterval(() => {
     compreTxt.innerHTML = pl[i]
     i < 2 ? i++  : i = 0
 }, 1000);
 
-
 setInterval(() => subirDescerGhost(`200px`), 2000);
 setInterval(() => subirDescerBaloes(`150px`), 2000);
 
+let valor = 0
+function subindo(params) {
+    let subir = setInterval(() => {
+        if (valor> 0) {
+            --valor
+            let Top = getComputedStyle(card).paddingTop
+            card.style.paddingTop = `${valor.toString()}px`
+            console.log(Top);
+        } else{
+            clearInterval(subir)
+            descendo()
+        }
+        }, 20);
+}
+
+function descendo(params) {
+    let descer = setInterval(() => {
+        if (valor< 60) {
+            ++valor
+            let Top = getComputedStyle(card).paddingTop
+            card.style.paddingTop = `${valor.toString()}px`
+            console.log(Top);
+        } else{
+            clearInterval(descer)
+            subindo()
+        }
+        }, 20);
+}
+
+
+descendo()

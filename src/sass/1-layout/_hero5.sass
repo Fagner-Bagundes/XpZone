@@ -24,6 +24,8 @@
     max-width: 1300px
     margin: auto
 
+ 
+
 
     @include B.tablet
         flex-direction: row
@@ -47,6 +49,7 @@
 
     img
         width: 70%
+        transition: margin-top 1s
 
         @include B.tablet
             width: 50%
@@ -55,6 +58,7 @@
         
         @include B.desktops
             max-width: 400px
+            margin-top: -360px
             
     
     .content

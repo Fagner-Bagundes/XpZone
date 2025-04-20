@@ -232,6 +232,8 @@ header {
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 1300px;
+  margin: auto;
 }
 @media (min-width: 768px) {
   header {
@@ -250,7 +252,7 @@ header {
 @media (min-width: 1024px) {
   header {
     background-image: url("../assets/imgs/desktop/bg-1.png");
-    padding-inline: 10%;
+    padding-inline: 150px;
     padding-block: 4%;
     background-position: center center;
     height: 850px;
@@ -377,6 +379,8 @@ header .content p {
   background-size: 100% 85%;
   background-position: center bottom;
   margin-top: 20px;
+  max-width: 1300px;
+  margin: auto;
 }
 @media (min-width: 768px) {
   .hero1 {
@@ -460,6 +464,8 @@ header .content p {
   padding-block: 4%;
   gap: 20px;
   margin-bottom: -90px;
+  max-width: 1300px;
+  margin: auto;
 }
 @media (min-width: 768px) {
   .hero2 {
@@ -743,6 +749,8 @@ header .content p {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center bottom;
+  max-width: 1300px;
+  margin: auto;
 }
 @media (min-width: 768px) {
   .hero5 {
@@ -829,6 +837,8 @@ footer {
   background: rgba(153, 153, 153, 0.04);
   backdrop-filter: blur(2px);
   padding-block: 10% 0%;
+  max-width: 1300px;
+  margin: auto;
 }
 @media (min-width: 768px) {
   footer {

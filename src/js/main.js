@@ -56,7 +56,6 @@ function animacaoCard(params) {
     descendo()
 }
 
-
 setInterval(trocaDePalavras, 1000);
 setInterval(() => subirDescerGhost(`200px`), 2000);
 setInterval(() => subirDescerBaloes(`150px`), 2000);

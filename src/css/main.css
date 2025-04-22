@@ -263,6 +263,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   padding-inline: 2%;
+  position: relative;
 }
 header nav button {
   display: none;
@@ -300,6 +301,7 @@ header nav a .logo {
 }
 header nav .menu-borger {
   width: 7%;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   header nav .menu-borger {
@@ -314,6 +316,21 @@ header nav .menu-borger:hover {
   header nav .menu-borger {
     display: none;
   }
+}
+header nav .content-menu {
+  z-index: 0;
+  height: 500px;
+  width: 50%;
+  max-width: 300px;
+  background: white;
+  position: absolute;
+  top: -19px;
+  right: -58%;
+  transition: all 0.8s;
+}
+header nav .content-menu-active {
+  display: flex;
+  right: -9%;
 }
 header .content {
   padding-top: 67%;

@@ -34,6 +34,7 @@ header
         display: flex
         justify-content: space-between
         padding-inline: 2%
+        position: relative
         button
             display: none
 
@@ -63,6 +64,7 @@ header
                 width: 100%
         .menu-borger
             width: 7%
+            z-index: 1
             @include B.tablet
                 width: 5%
             &:hover
@@ -71,6 +73,23 @@ header
             
             @include B.desktops
                 display: none
+
+        .content-menu
+            z-index: 0
+            height: 500px
+            width: 50%
+            max-width: 300px
+            background: V.$white
+            position: absolute
+            top: -19px
+            right: -58%
+            transition: all .8s
+            // display: none
+
+        .content-menu-active
+            display: flex
+            right: -9%
+
 
           
     .content

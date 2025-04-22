@@ -12,51 +12,66 @@ function trocaDePalavras() {
     i < 2 ? i++  : i = 0
 }
 
-function subirDescerGhost(valor) {
-    let bottom = getComputedStyle(ghost).marginBottom
-    ghost.style.marginBottom = valor
-    if (bottom === valor ) ghost.style.marginBottom = `0px`
+
+class AnimacaoGifs {
+    constructor(parameters) {
+        
+    }
+
+    static subirDescerGhost(valor) {
+        let bottom = getComputedStyle(ghost).marginBottom
+        ghost.style.marginBottom = valor
+        if (bottom === valor ) ghost.style.marginBottom = `0px`
+    };
+
+    static subirDescerBaloes(valor) {
+        let Top = getComputedStyle(baloes).marginTop
+        baloes.style.marginTop = valor
+        if (Top === valor ) baloes.style.marginTop = `0px`
+    }
+
+
 }
 
-function subirDescerBaloes(valor) {
-    let Top = getComputedStyle(baloes).marginTop
-    baloes.style.marginTop = valor
-    if (Top === valor ) baloes.style.marginTop = `0px`
-}
+class AnimacaoCard {
+    constructor(parameters) {
+    }
+    static inicia(){
+        this.subindo()
+    };
 
-
-function animacaoCard(params) { 
-    function addValor(params) {
+    static addValor(params) {
         card.style.paddingTop = `${valorAnimacao.toString()}px`
     }
-    
-    function descendo() {
+
+    static descendo() {
         let descer = setInterval(() => {
             if (valorAnimacao< 20) {
                 ++valorAnimacao
-                addValor()
+                this.addValor()
             } else{
                 clearInterval(descer)
-                subindo()
+                this.subindo()
             }
             }, 80);
-    }
-    
-    function subindo() {
+    };
+
+    static subindo() {
         let subir = setInterval(() => {
             if (valorAnimacao> 0) {
                 --valorAnimacao
-                addValor()
+                this.addValor()
             } else{
                 clearInterval(subir)
-                descendo()
+                this.descendo()
             }
             }, 80);
-    }
-    descendo()
+    };
 }
 
+
+
 setInterval(trocaDePalavras, 1000);
-setInterval(() => subirDescerGhost(`200px`), 2000);
-setInterval(() => subirDescerBaloes(`150px`), 2000);
-animacaoCard()
+setInterval(() => AnimacaoGifs.subirDescerGhost(`200px`), 2000);
+setInterval(() => AnimacaoGifs.subirDescerBaloes(`150px`), 2000);
+AnimacaoCard.inicia()

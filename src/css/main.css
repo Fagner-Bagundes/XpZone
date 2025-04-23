@@ -136,13 +136,27 @@ p {
   color: white;
   font-family: "Oxanium", sans-serif;
   font-size: 1.1em;
+  cursor: pointer;
+}
+.search-area .box-city .ceta-bottom {
+  width: 25px;
+  rotate: -90deg;
+  transition: all 0.5s;
+}
+@media (min-width: 1024px) {
+  .search-area .box-city .ceta-bottom {
+    margin-right: -5%;
+  }
+}
+.search-area .box-city .ceta-bottom-active {
+  rotate: 0deg;
 }
 .search-area .citys {
   width: 100%;
   position: absolute;
   left: 0;
   top: 150px;
-  transition: all 1s;
+  transition: all 0.5s;
   margin-top: -100px;
 }
 .search-area .citys .city {
@@ -202,15 +216,6 @@ p {
 }
 .search-area .citys-active:hover {
   cursor: pointer;
-}
-.search-area .citys-active img {
-  width: 25px;
-  rotate: -90deg;
-}
-@media (min-width: 1024px) {
-  .search-area .citys-active img {
-    margin-right: -5%;
-  }
 }
 
 .btn {

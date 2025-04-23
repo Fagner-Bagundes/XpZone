@@ -42,6 +42,7 @@
                 height: 35px
 
         img
+            
             width: 30px
             &:hover
                 cursor: pointer
@@ -56,6 +57,17 @@
         color: V.$white
         font-family: V.$font-title
         font-size: 1.1em
+        cursor: pointer
+
+        .ceta-bottom
+            width: 25px
+            rotate: -90deg
+            transition: all .5s
+            @include B.desktops
+                margin-right: -5%
+
+        .ceta-bottom-active
+            rotate: 0deg
 
 
     .citys
@@ -63,7 +75,7 @@
         position: absolute
         left: 0
         top: 150px
-        transition: all 1s
+        transition: all .5s
         margin-top: -100px
         .city
             display: none
@@ -71,6 +83,7 @@
             text-align: center
             display: none
             margin: auto
+
     .citys-active
         margin-top: -0px
         width: 100%
@@ -121,11 +134,7 @@
         &:hover
             cursor: pointer
 
-        img
-            width: 25px
-            rotate: -90deg
-            @include B.desktops
-                margin-right: -5%
+
 
 .btn
     width: 100%

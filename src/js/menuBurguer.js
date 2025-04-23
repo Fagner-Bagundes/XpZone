@@ -2,13 +2,13 @@ const menu = document.querySelector(".menu-borger")
 const contentMenu = document.querySelector(".content-menu")
 const deleteIcon = document.querySelector(".delete-ic")
 
-
-
 export class MenuBurguer {
-    static abrirMenu(){
 
+    static abrirMenu(){
+ 
         menu.addEventListener('click',(e)=>{
             let contentClass = contentMenu.classList.contains(`content-menu-active`)
+
             if (contentClass) {
                 contentMenu.classList.remove(`content-menu-active`)
             } else{

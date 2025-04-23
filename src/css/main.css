@@ -97,6 +97,7 @@ p {
   display: flex;
   justify-content: space-between;
   padding-block: 10px;
+  align-items: center;
   position: relative;
 }
 @media (min-width: 1024px) {
@@ -137,6 +138,15 @@ p {
   font-family: "Oxanium", sans-serif;
   font-size: 1.1em;
   cursor: pointer;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .search-area .box-city {
+    width: 170px;
+    font-size: 1.2em;
+    padding-top: 10px;
+    align-items: center;
+  }
 }
 .search-area .box-city .ceta-bottom {
   width: 25px;
@@ -146,6 +156,7 @@ p {
 @media (min-width: 1024px) {
   .search-area .box-city .ceta-bottom {
     margin-right: -5%;
+    margin-top: -10px;
   }
 }
 .search-area .box-city .ceta-bottom-active {
@@ -157,7 +168,16 @@ p {
   left: 0;
   top: 150px;
   transition: all 0.5s;
-  margin-top: -100px;
+}
+@media (min-width: 768px) {
+  .search-area .citys {
+    top: 125px;
+  }
+}
+@media (min-width: 1024px) {
+  .search-area .citys {
+    top: 75px;
+  }
 }
 .search-area .citys .search-city {
   display: none;
@@ -172,7 +192,6 @@ p {
 }
 .search-area .citys-active {
   margin-top: 0px;
-  width: 100%;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -183,14 +202,29 @@ p {
   border: 0.686px solid #D9D9D9;
   background: rgba(27, 27, 27, 0.829);
 }
+@media (min-width: 1024px) {
+  .search-area .citys-active {
+    padding: 10px;
+  }
+}
 .search-area .citys-active .search-city {
   display: flex;
   justify-content: center;
   background-color: #3a3a3a;
   border-radius: 5px;
   border-bottom: none;
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  margin-inline: auto;
+  height: 50px;
+  font-size: 0.8em;
+}
+.search-area .citys-active .search-city img {
+  width: 20px;
+}
+@media (min-width: 1024px) {
+  .search-area .citys-active .search-city {
+    width: 80%;
+  }
 }
 .search-area .citys-active .city-active {
   padding: 10px 0px;
@@ -213,7 +247,6 @@ p {
 }
 @media (min-width: 768px) {
   .search-area .citys-active {
-    height: 35px;
     align-items: center;
   }
 }

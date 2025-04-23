@@ -27,6 +27,7 @@
         display: flex
         justify-content: space-between
         padding-block: 10px
+        position: relative
         @include B.desktops
             border: none
             width: 210px
@@ -55,6 +56,32 @@
         color: V.$white
         font-family: V.$font-title
         font-size: 1.1em
+
+    .citys
+        position: absolute
+        width: 100%
+        left: 0
+        top: 127px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: start
+        gap: 20px
+        background-color: red
+        padding: 30px
+        
+        border: 0.686px solid #D9D9D9
+        background: rgba(153, 153, 153, 0.226)
+        backdrop-filter: blur(6.859205722808838px)
+        .city
+            padding: 10px
+            border-bottom: solid 1px V.$white
+            width: 100%
+            text-align: start
+    .citys-active
+
+
+
 
         @include B.tablet
             height: 35px

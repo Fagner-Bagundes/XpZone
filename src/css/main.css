@@ -97,6 +97,7 @@ p {
   display: flex;
   justify-content: space-between;
   padding-block: 10px;
+  position: relative;
 }
 @media (min-width: 1024px) {
   .search-area .search {
@@ -136,14 +137,36 @@ p {
   font-family: "Oxanium", sans-serif;
   font-size: 1.1em;
 }
+.search-area .citys {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 127px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  background-color: red;
+  padding: 30px;
+  border: 0.686px solid #D9D9D9;
+  background: rgba(153, 153, 153, 0.226);
+  backdrop-filter: blur(6.8592057228px);
+}
+.search-area .citys .city {
+  padding: 10px;
+  border-bottom: solid 1px white;
+  width: 100%;
+  text-align: start;
+}
 @media (min-width: 768px) {
-  .search-area .box-city {
+  .search-area .citys-active {
     height: 35px;
     align-items: center;
   }
 }
 @media (min-width: 1024px) {
-  .search-area .box-city {
+  .search-area .citys-active {
     padding: 0px;
     font-size: 1.2em;
     padding-left: 10px;
@@ -151,15 +174,15 @@ p {
     gap: 10px;
   }
 }
-.search-area .box-city:hover {
+.search-area .citys-active:hover {
   cursor: pointer;
 }
-.search-area .box-city img {
+.search-area .citys-active img {
   width: 25px;
   rotate: -90deg;
 }
 @media (min-width: 1024px) {
-  .search-area .box-city img {
+  .search-area .citys-active img {
     margin-right: -5%;
   }
 }

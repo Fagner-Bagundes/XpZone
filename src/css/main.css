@@ -263,7 +263,6 @@ header nav {
   display: flex;
   justify-content: space-between;
   padding-inline: 2%;
-  position: relative;
 }
 header nav button {
   display: none;
@@ -319,18 +318,37 @@ header nav .menu-borger:hover {
 }
 header nav .content-menu {
   z-index: 0;
-  height: 500px;
-  width: 50%;
-  max-width: 300px;
-  background: white;
+  height: 600px;
+  width: 0px;
+  background: #120428;
   position: absolute;
-  top: -19px;
-  right: -58%;
+  top: 0;
+  right: 3%;
   transition: all 0.8s;
+}
+header nav .content-menu a {
+  display: none;
 }
 header nav .content-menu-active {
   display: flex;
-  right: -9%;
+  flex-direction: column;
+  width: 200px;
+  right: 3%;
+  padding-top: 30%;
+  gap: 40px;
+  padding-inline: 20px;
+}
+header nav .content-menu-active a {
+  color: white;
+  font-family: "Oxanium", sans-serif;
+  display: flex;
+}
+header nav .content-menu-active a:hover {
+  background-image: linear-gradient(270deg, #E77460 12.81%, #E54A64 78.75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 header .content {
   padding-top: 67%;

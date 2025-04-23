@@ -34,7 +34,7 @@ header
         display: flex
         justify-content: space-between
         padding-inline: 2%
-        position: relative
+        // position: relative
         button
             display: none
 
@@ -76,19 +76,37 @@ header
 
         .content-menu
             z-index: 0
-            height: 500px
-            width: 50%
-            max-width: 300px
-            background: V.$white
+            height: 600px
+            width: 0px
+            background: V.$background
             position: absolute
-            top: -19px
-            right: -58%
+            top: 0
+            right: 3%
             transition: all .8s
-            // display: none
-
+            a
+                display: none
+            
         .content-menu-active
             display: flex
-            right: -9%
+            flex-direction: column
+            width: 200px
+            right: 3%
+
+            padding-top: 30%
+            gap: 40px
+            padding-inline: 20px
+
+            a
+                color: V.$white
+                font-family: V.$font-title
+                display: flex
+                &:hover
+                    background-image: V.$BG-horizontal
+                    background-clip: text
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    cursor: pointer
+
 
 
           

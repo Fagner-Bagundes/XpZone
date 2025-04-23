@@ -1,8 +1,14 @@
 const selecaoArea = document.querySelector(`.box-city`)
-
+const citys = document.querySelector(`.citys`)
+const city = document.querySelectorAll(`.city`)
 
 export function caixaSelecao() {
     selecaoArea.addEventListener(`click`, ()=>{
-        selecaoArea.style.height = `1000px`
+        citys.classList.add(`citys-active`)
+        city.forEach(element => {
+            element.classList.add(`city-active`)
+            
+        });
+
     })
 }

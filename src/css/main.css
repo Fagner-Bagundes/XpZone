@@ -234,6 +234,7 @@ header {
   background-repeat: no-repeat;
   max-width: 1300px;
   margin: auto;
+  position: relative;
 }
 @media (min-width: 768px) {
   header {
@@ -316,15 +317,53 @@ header nav .menu-borger:hover {
     display: none;
   }
 }
+header nav .menu-burger-none {
+  display: none;
+}
+header nav .delete-ic {
+  z-index: 2;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+}
+@media (min-width: 1024px) {
+  header nav .delete-ic {
+    display: none;
+  }
+}
+header nav .delete-ic-active {
+  display: flex;
+  cursor: pointer;
+  position: static;
+  width: 10%;
+  height: 10%;
+  max-width: 30px;
+  max-height: 30px;
+  transition: all 1s;
+}
+@media (min-width: 1024px) {
+  header nav .delete-ic-active {
+    display: none;
+  }
+}
 header nav .content-menu {
   z-index: 0;
-  height: 600px;
+  height: 500px;
   width: 0px;
   background: #120428;
   position: absolute;
   top: 0;
-  right: 3%;
+  right: 0%;
   transition: all 0.8s;
+  border: solid 1px #C0B3D1;
+  border-top: none;
+  padding-top: 90px;
+  border-bottom-left-radius: 10px;
+}
+header nav .content-menu img {
+  display: none;
+  width: 70px;
+  margin-inline: auto;
 }
 header nav .content-menu a {
   display: none;
@@ -332,15 +371,21 @@ header nav .content-menu a {
 header nav .content-menu-active {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  right: 3%;
-  padding-top: 30%;
+  width: 180px;
+  right: 0%;
   gap: 40px;
   padding-inline: 20px;
 }
+@media (min-width: 1024px) {
+  header nav .content-menu-active {
+    display: none;
+  }
+}
 header nav .content-menu-active a {
+  border-bottom: 1px solid;
   color: white;
   font-family: "Oxanium", sans-serif;
+  padding-bottom: 5px;
   display: flex;
 }
 header nav .content-menu-active a:hover {
@@ -349,6 +394,9 @@ header nav .content-menu-active a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
+}
+header nav .content-menu-active img {
+  display: flex;
 }
 header .content {
   padding-top: 67%;

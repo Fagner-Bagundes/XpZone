@@ -89,12 +89,12 @@ header
             display: flex
             cursor: pointer
             position: static
-            // margin-right: 0px
-            width: 10%
-            height: 10%
-            max-width: 30px
-            max-height: 30px
+            width: 30px
+            height: 30px
             transition: all 1s
+
+            @include B.tablet
+                
 
             @include B.desktops
                 display: none
@@ -114,6 +114,10 @@ header
             border-top: none
             padding-top: 90px
             border-bottom-left-radius: 10px
+            @include B.tablet
+                height: 100%
+                border-bottom: none
+                border-bottom-left-radius: 0px
 
             img
                 display: none

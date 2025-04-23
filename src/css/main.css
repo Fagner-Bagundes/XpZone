@@ -335,10 +335,8 @@ header nav .delete-ic-active {
   display: flex;
   cursor: pointer;
   position: static;
-  width: 10%;
-  height: 10%;
-  max-width: 30px;
-  max-height: 30px;
+  width: 30px;
+  height: 30px;
   transition: all 1s;
 }
 @media (min-width: 1024px) {
@@ -359,6 +357,13 @@ header nav .content-menu {
   border-top: none;
   padding-top: 90px;
   border-bottom-left-radius: 10px;
+}
+@media (min-width: 768px) {
+  header nav .content-menu {
+    height: 100%;
+    border-bottom: none;
+    border-bottom-left-radius: 0px;
+  }
 }
 header nav .content-menu img {
   display: none;
